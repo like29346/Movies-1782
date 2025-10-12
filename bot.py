@@ -124,8 +124,7 @@ async def file_handler(client: Client, message: Message):
         await status_msg.edit_text(
             f"✅ **Link Generated Successfully!**\n\n🔗 Your Link: `{share_link}`",
             disable_web_page_preview=True 
-    
-    except Exception as e:
+         except Exception as e:
         logging.error(f"File handling error: {e}")
         await status_msg.edit_text(f"❌ **Error!**\n\nKuch galat ho gaya. Please try again.\n`Details: {e}`")
 
