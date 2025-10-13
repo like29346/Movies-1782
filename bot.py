@@ -123,7 +123,11 @@ async def file_handler(client: Client, message: Message):
         share_link = f"https://t.me/{bot_username}?start={file_id_str}"
         await status_msg.edit_text("Processing...", parse_mode="HTML")
 
-            f"✅ **Link Generated Successfully!**\n\n🔗 Your Link: `{share_link}`",
+            def send_link():
+    share_link = "https://example.com"
+    message = f"✅ **Link Generated Successfully!**\n\n🔗 Your Link: `{share_link}`"
+    print(message)
+
             disable_web_page_preview=True 
          except Exception as e:
         logging.error(f"File handling error: {e}")
