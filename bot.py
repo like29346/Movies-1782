@@ -50,7 +50,8 @@ print("You can now run your bot with: python3 bot.py")
 """ 
  
 script_path = Path("/mnt/data/generate_env.py") 
-script_path.write_text(env_generator, encoding="utf-8") 
+script_path = Path("generate_env.py")
+ 
 os.chmod(script_path, 0o755) 
  
 {"path": str(script_path), "size_bytes": script_path.stat().st_size}
