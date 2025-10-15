@@ -31,15 +31,15 @@ logging.basicConfig(level=logging.INFO)
 load_dotenv()
 
 # --- Configuration ---
-API_ID = int(os.environ.get("API_ID"))
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-MONGO_URI = os.environ.get("MONGO_URI")
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL")) 
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL") 
+API_ID = int(os.environ.get("27699873"))
+API_HASH = os.environ.get("4615359950a50d32c2ab3ad80475d87e")
+BOT_TOKEN = os.environ.get("8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM")
+MONGO_URI = os.environ.get("mongodb+srv://movies123:Movies@123@cluster0.cozjses.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+LOG_CHANNEL = int(os.environ.get("1002630246729")) 
+UPDATE_CHANNEL = os.environ.get("1003103870573") 
 
 # Admin configuration
-ADMIN_IDS_STR = os.environ.get("ADMIN_IDS", "")
+ADMIN_IDS_STR = os.environ.get("ADMIN_IDS", "5311840807")
 ADMINS = [int(admin_id.strip()) for admin_id in ADMIN_IDS_STR.split(',') if admin_id]
 
 # --- Database Setup ---
