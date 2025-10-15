@@ -36,7 +36,7 @@ fields = {
     "USER_SESSION_STRING": ask("USER_SESSION_STRING", "(your session string)"), 
     "BOT_USERNAME": ask("BOT_USERNAME", "@movies1872BOT"), 
     "BOT_TOKEN": ask("BOT_TOKEN", "8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"), 
-    "BOT_SESSION_NAME": ask("BOT_SESSION_NAME", "bot_session"), 
+    "BOT_SESSION_NAME": ask("BOT_SESSION_NAME", "movies1872BOT"), 
     "LOG_CHANNEL": ask("LOG_CHANNEL", "1002630246729") 
 } 
  
