@@ -28,7 +28,7 @@ fields = {
     "BOT_OWNER": ask("BOT_OWNER", "5311840807"), 
     "UPDATES_CHANNEL": ask("UPDATES_CHANNEL", "1003103870573"), 
     "DATABASE_URL": ask("DATABASE_URL", "Database movies1782🎬"), 
-    "MONGO_URI": ask("MONGO_URI", "mongodb+srv://movies123:Movies@123@cluster0.cozjses.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    "MONGO_URI": ask("MONGO_URI", "MONGO_URI": ask("MONGO_URI", "mongodb+srv://movies123:Movies@123@cluster0.cozjses.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 "), 
     "UPDATES_CHANNEL_USERNAME": ask("UPDATES_CHANNEL_USERNAME", "@Movies_ Update"), 
     "BROADCAST_AS_COPY": ask("BROADCAST_AS_COPY", "True or False"), 
