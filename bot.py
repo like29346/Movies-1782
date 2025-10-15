@@ -23,20 +23,21 @@ def ask(key, example="", secret=False):
     return val.strip() 
  
 fields = { 
-    "API_ID": ask("API_ID", "123456"), 
-    "API_HASH": ask("API_HASH", "abcdef1234567890"), 
-    "BOT_OWNER": ask("BOT_OWNER", "Your Telegram ID"), 
-    "UPDATES_CHANNEL": ask("UPDATES_CHANNEL", "Channel ID"), 
-    "DATABASE_URL": ask("DATABASE_URL", "movies123"), 
-    "MONGO_URI": ask("MONGO_URI", "mongodb+srv://..."), 
-    "UPDATES_CHANNEL_USERNAME": ask("UPDATES_CHANNEL_USERNAME", "@ChannelName"), 
+    "API_ID": ask("API_ID", "27699873"), 
+    "API_HASH": ask("API_HASH", "4615359950a50d32c2ab3ad80475d87e"), 
+    "BOT_OWNER": ask("BOT_OWNER", "5311840807"), 
+    "UPDATES_CHANNEL": ask("UPDATES_CHANNEL", "1003103870573"), 
+    "DATABASE_URL": ask("DATABASE_URL", "Database movies1782🎬"), 
+    "MONGO_URI": ask("MONGO_URI", "mongodb+srv://movies123:Movies@123@cluster0.cozjses.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+"), 
+    "UPDATES_CHANNEL_USERNAME": ask("UPDATES_CHANNEL_USERNAME", "@Movies_ Update"), 
     "BROADCAST_AS_COPY": ask("BROADCAST_AS_COPY", "True or False"), 
-    "CHANNEL_ID": ask("CHANNEL_ID", "1234567890"), 
+    "CHANNEL_ID": ask("CHANNEL_ID", "1002630246729"), 
     "USER_SESSION_STRING": ask("USER_SESSION_STRING", "(your session string)"), 
-    "BOT_USERNAME": ask("BOT_USERNAME", "@yourbotname"), 
-    "BOT_TOKEN": ask("BOT_TOKEN", "1234567890:ABCDEF12345"), 
+    "BOT_USERNAME": ask("BOT_USERNAME", "@movies1872BOT"), 
+    "BOT_TOKEN": ask("BOT_TOKEN", "8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"), 
     "BOT_SESSION_NAME": ask("BOT_SESSION_NAME", "bot_session"), 
-    "LOG_CHANNEL": ask("LOG_CHANNEL", "Channel Name or ID") 
+    "LOG_CHANNEL": ask("LOG_CHANNEL", "1002630246729") 
 } 
  
 env_content = "\\n".join([f"{k}={v}" for k, v in fields.items() if v]) 
