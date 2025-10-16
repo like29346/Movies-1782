@@ -58,8 +58,4 @@ if __name__ == "__main__":
         print("🚀 Starting the Pyrogram Bot...")
         app.run()
         
-    except Exception as e:
-        # अगर बॉट शुरू होने में कोई error आता है तो उसे प्रिंट करके बाहर निकलते हैं।
-        print(f"❌ FATAL ERROR: Bot failed to start! Please check your API_ID, API_HASH, or BOT_TOKEN. Details: {e}")
-        # यह sys.exit(1) Render को बताता है कि एप्लीकेशन ठीक से नहीं चली।
-        sys.exit(1)
+    
