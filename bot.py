@@ -42,13 +42,14 @@ if __name__ == "__main__":
             api_id=int(27699873), # <--- इसे जांचें
             api_hash="4615359950ad32c2ab3d4b80475d87e",
             bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
-        )        
-
-# ===============================================
-                   print("🚀 Starting the Pyrogram Bot...") 
-
-    # ===============================================  
-        app.run()
-
+        )
+        
+        # Pyrogram शुरू होने से पहले print स्टेटमेंट
+        print("🚀 Starting the Pyrogram Bot...") 
+        
+        # बॉट को चलाएँ और तब तक चालू रखें जब तक प्रोग्राम बंद न हो जाए
+        app.run()              
+        
     except Exception as e:
         print(f"❌ An error occurred during bot startup: {e}")
+
