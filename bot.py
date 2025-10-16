@@ -1,7 +1,5 @@
 import os
 import sys
-from pyrogram import Client
-
 # =============================================== 
 #  Configuration Loader for Telegram Bot (Render/Server Use) 
 # =============================================== 
@@ -10,7 +8,10 @@ def get_config(key, required=True):
     """Fetches environment variable and ensures critical keys are present."""
     value = os.getenv(key)
     
-    
+    if required and not value:
+        print(f"❌ FATAL ERROR: Required variable '{key}' is missing in Render Dashboard.")
+        print("कृपया इस Key को Environment Tab में सेट करें।")
+        sys.exit(1)
         
     return value.strip() if value else None
 
@@ -27,27 +28,8 @@ LOG_CHANNEL = int(get_config("LOG_CHANNEL")) if get_config("1002630246729") else
 UPDATE_CHANNEL = get_config("1003103870573")
 
 # Optional Keys
-DATABASE_URL = get_config("Database movies1782🎬", required=False)
+DATABASE_URL = get_config("movies123", required=False)
 USER_SESSION_STRING = get_config("1BVtsOKEBu7HCXYkQunrqrwAFCE6ivknaOrXWfguNisN_T8SGFVo26zIsfahH-1boT_a46rYpWy6-vPjRVr2mnKAXIvaZpTmgijXz8_au0GjW_M7cyCiswNOEFqRWHXiOSsgf6Ltzar7pDBr_fJDz_wSRBKCdM0GU1f6mUioRYukcvplKFYfdg8W4b_Hdw2fW_IXgl0SPC32gWOeTkRKDiAx04AFTT9Zh9DftIR7PvbsV76xa4BBi-FYuGPUQiSaqgioZ5RYWjQ-ZAJb_fhXtcwFiJDgOqnfHKvR5OP8mm4-EC3WuLWFANuicRNq2N23NS7YZtEvMqedDx9p3TlX92voRvM31tzk=", required=False)
 
-
-# ... (पिछला कोड) ...
-
 if __name__ == "__main__":
-    if not ADMINS:
-        logging.warning("WARNING: ADMIN_IDS is not set. Settings command kaam nahi karega.")
-    
-    # Flask server ko ek alag thread me start karo
-    logging.info("Starting Flask web server...")
-    flask_thread = Thread(target=run_flask)
-    flask_thread.start()
-    
-    logging.info("Bot is starting...")
-    
-    # Bot ko try block me daalo tak ki errors ko pakda ja sake
-    try:
-        app.run()
-        logging.info("Bot has stopped.")
-    except Exception as e:
-        logging.error(f"❌ Bot failed to start or stopped unexpectedly: {e}")
-
+    print("✅ Configuration loaded successfully from Render Environment Variables.")
