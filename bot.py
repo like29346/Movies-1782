@@ -41,7 +41,7 @@ if __name__ == "__main__":
         app = Client(
             "MovieBot", # Session Name. आप इसे "my_telegram_bot" से बदल सकते हैं।
             api_id=int(27699873),
-            api_hash="4615359950ad32c2ab3d4b80475d87e")।
+            api_hash="4615359950ad32c2ab3d4b80475d87e",
             bot_token=8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM
 
         )
