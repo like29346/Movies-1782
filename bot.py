@@ -46,10 +46,12 @@ if __name__ == "__main__":
 # (या आपका app.run() एक try ब्लॉक के अंदर है)
 
 #... कुछ कोड
-#...
-    try:
-    
-             print("🚀 Starting the Pyrogram Bot...")
-    
-    
-             app.run()
+#..49 #...
+50 try:  
+51
+52     print("🚀 Starting the Pyrogram Bot...")
+53
+54     app.run()
+55 
+58 except Exception as e: 
+59     print(f"❌ An error occurred during bot startup: {e}") 
