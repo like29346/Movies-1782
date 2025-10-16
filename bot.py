@@ -40,7 +40,7 @@ if __name__ == "__main__":
                 app = Client(
             "MovieBot",
             api_id=int(27699873), # <--- इसे जांचें
-            api_hash="4615359950ad32c2ab3d4b80475d87e",
+            api_hash="4615359950a50d32c2ab3ad80475d87e",
             bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
         )
         
