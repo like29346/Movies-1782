@@ -29,9 +29,7 @@ DATABASE_URL = get_config("Database movies1782🎬", required=False)
 USER_SESSION_STRING = get_config("1BVtsOKEBu7HCXYkQunrqrwAFCE6ivknaOrXWfguNisN_T8SGFVo26zIsfahH-1boT_a46rYpWy6-vPjRVr2mnKAXIvaZpTmgijXz8_au0GjW_M7cyCiswNOEFqRWHXiOSsgf6Ltzar7pDBr_fJDz_wSRBKCdM0GU1f6mUioRYukcvplKFYfdg8W4b_Hdw2fW_IXgl0SPC32gWOeTkRKDiAx04AFTT9Zh9DftIR7PvbsV76xa4BBi-FYuGPUQiSaqgioZ5RYWjQ-ZAJb_fhXtcwFiJDgOqnfHKvR5OP8mm4-EC3WuLWFANuicRNq2N23NS7YZtEvMqedDx9p3TlX92voRvM31tzk=", required=False)
 
 
-# ===============================================
-#  मुख्य रनिंग ब्लॉक (MAIN RUNNING BLOCK)
-# ===============================================
+# ... (पिछला कोड) ...
 
 if __name__ == "__main__":
     print("✅ Configuration loaded successfully from Render Environment Variables.")
@@ -45,7 +43,7 @@ if __name__ == "__main__":
             bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
 
         )
-   print("🚀 Starting the Pyrogram Bot...")  
+        print("🚀 Starting the Pyrogram Bot...")  # <-- इसे 8 स्पेस से Indent करें
         app.run()              
         
     except Exception as e:
