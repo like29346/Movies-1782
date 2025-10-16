@@ -4,9 +4,7 @@ import sys
 #  Configuration Loader for Telegram Bot (Render/Server Use) 
 # =============================================== 
 
-def get_config(key, required=True):
-    """Fetches environment variable and ensures critical keys are present."""
-    value = os.getenv(key)
+
     
     if required and not value:
         print(f"❌ FATAL ERROR: Required variable '{key}' is missing in Render Dashboard.")
