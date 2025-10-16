@@ -37,14 +37,13 @@ if __name__ == "__main__":
     print("✅ Configuration loaded successfully from Render Environment Variables.")
 
     try:
-        # Pyrogram क्लाइंट को शुरू करते हैं
-        app = Client(
-            "MovieBot", # Session Name. आप इसे "my_telegram_bot" से बदल सकते हैं।
-            api_id=int(27699873),
-            api_hash="4615359950ad32c2ab3d4b80475d87e",
-            bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
-
+                app = Client(
+            "MovieBot",
+            api_id=int(27699873), # <--- इसे जांचें
+            api_hash="4615359950a50d32c2ab3ad80475d87e", # <--- इसे जांचें
+            bot_token="..."
         )
+
         print("🚀 Starting the Pyrogram Bot...")  # <-- इसे 8 स्पेस से Indent करें
         app.run()              
         
