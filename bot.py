@@ -45,14 +45,8 @@ if __name__ == "__main__":
             bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
 
         )
-        
-        # app.run() कमांड बॉट को शुरू करता है और इसे Render पर चालू रखता है।
-        print("🚀 Starting the Pyrogram Bot...")  
-       
-        try:
-       
+   print("🚀 Starting the Pyrogram Bot...")  
         app.run()              
+        
     except Exception as e:
-        
-        
-        print(f"An error occurred: {e}")
+        print(f"❌ An error occurred during bot startup: {e}")
