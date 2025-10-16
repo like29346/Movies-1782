@@ -45,7 +45,8 @@ if __name__ == "__main__":
         )        
 
 # ===============================================
-    print("🚀 Starting the Pyrogram 
+                   print("🚀 Starting the Pyrogram Bot...") 
+
     # ===============================================  
         app.run()
 
