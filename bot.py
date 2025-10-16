@@ -44,9 +44,9 @@ if __name__ == "__main__":
             bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
         )        
 
-        # <--- 8 Spaces
-        print("🚀 Starting the Pyrogram Bot...")
-        # <--- 8 Spaces
+# ===============================================
+    print("🚀 Starting the Pyrogram 
+    # ===============================================  
         app.run()
 
     except Exception as e:
