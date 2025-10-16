@@ -34,19 +34,20 @@ USER_SESSION_STRING = get_config("1BVtsOKEBu7HCXYkQunrqrwAFCE6ivknaOrXWfguNisN_T
 # ... (पिछला कोड) ...
 
 if __name__ == "__main__":
-    print("✅ Configuration loaded successfully from Render Environment Variables.")
-
+    if not ADMINS:
+        logging.warning("WARNING: ADMIN_IDS is not set. Settings command kaam nahi karega.")
+    
+    # Flask server ko ek alag thread me start karo
+    logging.info("Starting Flask web server...")
+    flask_thread = Thread(target=run_flask)
+    flask_thread.start()
+    
+    logging.info("Bot is starting...")
+    
+    # Bot ko try block me daalo tak ki errors ko pakda ja sake
     try:
-                app = Client(
-            "MovieBot",
-            api_id=int(27699873), # <--- इसे जांचें
-            api_hash="4615359950a50d32c2ab3ad80475d87e",
-            bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
-        )# यह मान रहा है कि आपका 'try' ब्लॉक लाइन 44-45 के बाद कहीं शुरू हुआ है
-# (या आपका app.run() एक try ब्लॉक के अंदर है)
-#...
-try: # <--- 0 Spaces
-    print("🚀 Starting the Pyrogram Bot...") # <--- 4 Spaces
-    app.run()                             # <--- 4 Spaces
-except Exception as e:                      # <--- 0 Spaces, 'try' के साथ एक सीध में
-    print(f"❌ An error occurred during bot startup: {e}") # <--- 4 Spaces
+        app.run()
+        logging.info("Bot has stopped.")
+    except Exception as e:
+        logging.error(f"❌ Bot failed to start or stopped unexpectedly: {e}")
+
