@@ -48,7 +48,6 @@ if __name__ == "__main__":
         
         # app.run() कमांड बॉट को शुरू करता है और इसे Render पर चालू रखता है।
         print("🚀 Starting the Pyrogram Bot...")
-        Ye sahi he
 try:
     app.run()              
 except Exception as e:
