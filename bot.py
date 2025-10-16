@@ -45,13 +45,9 @@ if __name__ == "__main__":
         )# यह मान रहा है कि आपका 'try' ब्लॉक लाइन 44-45 के बाद कहीं शुरू हुआ है
 # (या आपका app.run() एक try ब्लॉक के अंदर है)
 
-#... कुछ कोड
-#..49 #...
-   try:  
-  
-       print("🚀 Starting the Pyrogram Bot...")
-  
-       app.run()
-   
-   except Exception as e: 
-       print(f"❌ An error occurred during bot startup: {e}") 
+#...
+try: # <--- 0 Spaces
+    print("🚀 Starting the Pyrogram Bot...") # <--- 4 Spaces
+    app.run()                             # <--- 4 Spaces
+except Exception as e:                      # <--- 0 Spaces, 'try' के साथ एक सीध में
+    print(f"❌ An error occurred during bot startup: {e}") # <--- 4 Spaces
