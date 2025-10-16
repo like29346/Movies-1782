@@ -1,5 +1,7 @@
 import os
 import sys
+from pyrogram import Client
+
 # =============================================== 
 #  Configuration Loader for Telegram Bot (Render/Server Use) 
 # =============================================== 
