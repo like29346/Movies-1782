@@ -44,11 +44,11 @@ if __name__ == "__main__":
             api_hash="4615359950ad32c2ab3d4b80475d87e",
             bot_token="8437160489:AAEKPj7yArqb7Viv8L_yh0ogn_ouRNJFUpM"
 
-        )
-   def main():
-    print("Loading...")
-    print("🚀 Starting the Pyrogram Bot...")  # ✅ सही indentation
-  
+        )  
+if __name__ == "__main__":
+    def main():
+        print("🚀 Starting the Pyrogram Bot...")
+
         app.run()              
         
     except Exception as e:
